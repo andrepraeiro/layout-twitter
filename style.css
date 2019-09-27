@@ -6,7 +6,7 @@
 
 body {
   background: #e6ecf8;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
 }
@@ -72,7 +72,7 @@ header#main-header div.side input {
   padding: 0 30px 0 12px;
   border-radius: 16px;
   font-size: 12px;
-  background: #f5f8fa url("/images/search.svg") no-repeat 190px center;
+  background: #f5f8fa url('/images/search.svg') no-repeat 190px center;
 }
 
 header#main-header div.side img {
@@ -139,7 +139,7 @@ div.bar .content ul li {
 }
 
 div.bar .content ul li.active::after {
-  content: "";
+  content: '';
   width: 100%;
   height: 2px;
   position: absolute;
@@ -296,6 +296,92 @@ div.wrapper-content aside.profile .images ul li {
 
 div.wrapper-content .timeline {
   flex: 1;
+  background: #fff;
+  margin: 10px 20px 0;
+}
+
+div.wrapper-content .timeline nav {
+  border-bottom: 1px solid #e6ecf8;
+  padding: 10px 15px;
+}
+
+div.wrapper-content .timeline nav a {
+  text-decoration: none;
+  color: #3bb9e3;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+div.wrapper-content .timeline nav a:first-child {
+  margin: 0;
+}
+
+div.wrapper-content .timeline nav a.active {
+  color: #1f2226;
+}
+
+div.wrapper-content .timeline ul.tweets {
+  list-style: none;
+}
+
+div.wrapper-content .timeline ul.tweets li {
+  border-bottom: 1px solid #e6ecf8;
+  padding: 10px 15px;
+  display: flex;
+}
+
+div.wrapper-content .timeline ul.tweets li > img {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+}
+
+div.wrapper-content .timeline ul.tweets li .info {
+  margin-left: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong {
+  font-size: 14px;
+  color: #1f2226;
+}
+
+div.wrapper-content .timeline ul.tweets li .info strong span {
+  font-weight: normal;
+  font-size: 12px;
+  color: #53626c;
+}
+
+div.wrapper-content .timeline ul.tweets li .info p {
+  font-size: 14px;
+  color: #1f2226;
+  margin-top: 5px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions {
+  display: flex;
+  margin-top: 20px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #657786;
+  font-weight: bold;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a:first-child {
+  margin-left: 0;
+}
+
+div.wrapper-content .timeline ul.tweets li .actions a img {
+  margin-right: 5px;
 }
 
 div.wrapper-content aside.widgets {
@@ -327,7 +413,7 @@ div.wrapper-content aside.widgets .widget .title a {
 }
 
 div.wrapper-content aside.widgets .widget .title a::before {
-  content: "";
+  content: '';
   width: 2px;
   height: 2px;
   border-radius: 50%;
